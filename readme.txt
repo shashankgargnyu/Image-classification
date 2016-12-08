@@ -13,5 +13,7 @@ Example: Faces={names(1)}
 → mega_hist.mat ( generated from mega_histogram.m)  (9144*100)  where, 1*100 is the     	 histogram of 100 visual words of one image
 → classify_svm.m ( Training svm)
 
+Other data can be found at the google drive link below:
+https://drive.google.com/a/nyu.edu/file/d/0BzUaoTczb_gSaW1oTEc0OVlvWms/view?usp=sharing
 
 	
