@@ -1,19 +1,26 @@
-Image Classification
-	→ demo_main.m (To generate sift features and keypoints )
-	→ feature_vectors.mat (It contains all the feature vector of all the images in the dataset ( 		2158239* 128) , Rows= No. of features, columns= length of the descriptor) 
-	→ imageTOfeature_mapping.mat (9144*1) , example : feature_vectors([‘Faces’ ‘4’]) 
-It means you can access feature_list of  4th image in “Faces’ category.
-	→ Image_count.mat  (This stores the number of images in each category from 1 to 102)
-	→ category_names.mat ( It contains all the categories name stored in cell) 
-Example: Faces={names(1)}
-→ clustering.m ( Used K-means to determine the optimum value of k , still running) , 		 suppose k=100 for experiment
-→ a_100_cluster.mat ( maps every feature vector to the corresponding cluster)
-→ c_100_cluster.mat ( gives the centroid of 100 cluster)
-→ mega_histogram.m ( To generate the mega histogram of visual words) . 
-→ mega_hist.mat ( generated from mega_histogram.m)  (9144*100)  where, 1*100 is the     	 histogram of 100 visual words of one image
-→ classify_svm.m ( Training svm)
 
-Other data can be found at the google drive link below:
-https://drive.google.com/a/nyu.edu/file/d/0BzUaoTczb_gSaW1oTEc0OVlvWms/view?usp=sharing
+Object Detection and Localization using Bag of Words Representation and Multi-Class Classification
+======
+The project is based on Image classification and Localization. We are using Caltech 101 and Caltech 256 datasets for the project. The main code can be accessed at 
+`Machine-Learning-Project/src/main`
+
+The folder contains two files, `main1.m` is for the Image classification part and `main2.m` is for Image localization part.
+
+####Dependencies
+1. `vl-feat`
+
+To run the poject: 
+
+1. Install the dependency `vl-feat` by following the instructions given [here](http://www.vlfeat.org/install-matlab.html).
+
+2. Change the path to your image and code directory paths whereever mentioned in the comments.
+
+3. Change the number of CPU cores.
+
+4. Change the n_cat to number of categories you have.
+
+5. Set number of clusters you want, k.
+
+
 
 	
