@@ -5,7 +5,6 @@ load('imageTOfeature_mapping.mat')
 load('feature_vectors.mat')
 load('a_100_cluster.mat')
 load('image_count.mat')
-
 %%
 k=100;          % Change K=number of clusters
 mega_hist_new=[];
